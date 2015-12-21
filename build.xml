@@ -1,0 +1,18 @@
+<project basedir="." default="deploy">
+
+  <property name="worklight-ant-deployer" location="worklight-ant-deployer.jar" />
+
+  <target name="init">
+    <taskdef resource="com/worklight/ant/defaults.properties">
+      <classpath>
+        <pathelement location="C:\Program Files\IBM\MobileFirst_Platform_Server\WorklightServer\worklight-ant-deployer.jar" />
+      </classpath>
+    </taskdef>
+  </target>
+
+  <target name="deploy" depends="init">
+    <wladm url="http://172.17.0.177:9081/UCDConsole/index.html#/main/worklight" user="admin" password="admin">
+      <deploy-app runtime="worklight" file="C:\Program Files\agent\var\work\MF-Component\MobileApp-all.wlapp"/>
+    </wladm>
+  </target> 
+</project>
