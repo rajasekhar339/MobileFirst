@@ -3,7 +3,7 @@
   <property name="worklight-ant-deployer" location="worklight-ant-deployer.jar" />
 
   <target name="init">
-    <taskdef resource="com/worklight/ant/defaults.properties">
+    <taskdef resource="com/worklight/ant/deployers/antlib.xml">
       <classpath>
         <pathelement location="C:\Program Files\IBM\MobileFirst_Platform_Server\WorklightServer\worklight-ant-deployer.jar" />
       </classpath>
