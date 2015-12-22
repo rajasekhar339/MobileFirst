@@ -10,7 +10,7 @@
     </taskdef>
   </target>
   <target name="deploy" depends="init">
-    <wladm url="http://172.17.0.177:9081/worklightadmin" secure="false" user="admin" password="admin">
+    <wladm url="http://172.17.0.177:9081/wladmin" secure="false" user="admin" password="admin">
       <deploy-app runtime="worklight" file="C:\Program Files\agent\var\work\MF-Component\MobileApp-all.wlapp"/>
     </wladm>
   </target> 
